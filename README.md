@@ -13,7 +13,7 @@ O objetivo deste repositório é acompanhar a evolução técnica ao longo do cu
 Aplicação de console que realiza operações matemáticas básicas e mantém histórico das operações realizadas.
 
 🔗 Acesse o projeto:
-➡️ <a href="https://github.com/Vanderluizsj/AcademiaDoProgramadorBackEnd/Calculadora">Calculadora</a>
+➡️ <a href="https://github.com/Vanderluizsj/AcademiaDoProgramadorBackEnd/tree/main/Calculadora">Calculadora</a>
 
 **Funcionalidades:**
 
