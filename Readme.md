@@ -27,7 +27,18 @@ Aplicação de console que realiza operações matemáticas básicas e mantém h
 * Histórico de Operações
 
 ---
+### 🧮 Jogo da adivinhação Console
 
+Um jogo simples de console para adivinhar o numero que foi gerado automaticamente.
+
+🔗 Acesse o projeto:
+➡️ <a href="https://github.com/Vanderluizsj/AcademiaDoProgramadorBackEnd/tree/main/JogoDeAdivinhacao">JogoDeAdivinhacao</a>
+
+**Funcionalidades:**
+
+* Escolha o nivel de dificuldade
+* Tente acertar o numero que foi gerado automaticamente pela aplicação
+---
 *(Novos projetos serão adicionados ao longo do curso)*
 
 ---
