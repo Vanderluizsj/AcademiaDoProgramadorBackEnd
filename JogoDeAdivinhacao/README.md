@@ -3,7 +3,7 @@
 ## 🎥 Demonstração
 
 <p align="center">
-  <img src=".docs/demo.gif" alt="Demonstração do Jogo de adivinhação" />
+  <img src=".docs/Demo.gif" alt="Demonstração do Jogo de adivinhação" />
 </p>
 
 ---
