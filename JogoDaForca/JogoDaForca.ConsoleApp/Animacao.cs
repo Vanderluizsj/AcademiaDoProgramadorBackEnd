@@ -9,12 +9,13 @@ namespace JogoDaForca.ConsoleApp
     {
         char[,] animacaoForca = new char[9, 13];
         int contadorDeAcionamento = 0;
-        public void AnimacaoForca()
+        public void AnimacaoForca(int tentativas)
         {
+            contadorDeAcionamento = tentativas;
             switch (contadorDeAcionamento)
             {
-                case 0:
-                    contadorDeAcionamento++;
+                case 5:
+                    //contadorDeAcionamento++;
                     for (int linha = 0; linha < animacaoForca.GetLength(0); linha++)
                     {
                         for (int coluna = 0; coluna < animacaoForca.GetLength(1); coluna++)
@@ -35,20 +36,20 @@ namespace JogoDaForca.ConsoleApp
 
                     animacaoForca[1, 1] = '/';
                     break;
-                case 1:
-                    contadorDeAcionamento++;
+                case 4:
+                    //contadorDeAcionamento++;
                     animacaoForca[1, 11] = '|';
                     break;
-                case 2:
-                    contadorDeAcionamento++;
+                case 3:
+                    //contadorDeAcionamento++;
                     animacaoForca[2, 11] = 'O';
                     break;
-                case 3:
-                    contadorDeAcionamento++;
+                case 2:
+                    //contadorDeAcionamento++;
                     animacaoForca[3, 11] = '|';
                     break;
-                case 4:
-                    contadorDeAcionamento++;
+                case 1:
+                    //contadorDeAcionamento++;
                     animacaoForca[3, 10] = '/';
                     animacaoForca[3, 12] = '\\';
                     break;
@@ -56,7 +57,7 @@ namespace JogoDaForca.ConsoleApp
                 default:
                     animacaoForca[4, 10] = '/';
                     animacaoForca[4, 12] = '\\';
-                    contadorDeAcionamento=0;
+                    //contadorDeAcionamento=0;
                     break;
             }
 
