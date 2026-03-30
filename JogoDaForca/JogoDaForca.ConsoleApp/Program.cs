@@ -1,6 +1,20 @@
 ﻿using JogoDaForca.ConsoleApp;
 
-string palavraSecreta = "ABACATE";
+string[] palavras =
+{
+    "ABACATE", "ABACAXI", "ACEROLA", "ACAI", "ARACA",
+    "BACABA", "BACURI", "BANANA", "CAJA", "CAJU",
+    "CARAMBOLA", "CUPUAÇU", "GRAVIOLA", "GOIABA",
+    "JABUTICABA", "JENIPAPO", "MACA", "MANGABA",
+    "MANGA", "MARACUJA", "MURICI", "PEQUI",
+    "PITANGA", "PITAYA", "SAPOTI", "TANGERINA",
+    "UMBU", "UVA", "UVAIA"
+};
+
+Random random = new Random();
+
+string palavraSecreta = palavras[random.Next(palavras.Length)];
+//string palavraSecreta = "ABACATE";
 bool fimDeJogo = false;
 char[] letrasDescobertas = new char[palavraSecreta.Length];
 int tentativas = 5;
@@ -12,6 +26,7 @@ Console.Clear();
 
 do
 {
+    fimDeJogo = false;
     textoVerde();
     Console.WriteLine("-----------------------------------------------------------------------");
     Console.WriteLine("--------------------  Bem-vindo ao Jogo da Forca!  --------------------");
@@ -19,6 +34,8 @@ do
 
     
     Console.WriteLine("\n*Nesse jogo, você terá que adivinhar as letras de uma palavra secreta!\n");
+
+    Console.WriteLine("\n*Dica: É o nome de uma fruta.\n");
 
     textoAmarelo();
     Console.WriteLine("\nVocê tera 5 chances, a cada erro cometido uma" + 
@@ -36,9 +53,12 @@ do
 
     StartGame();
 
-    Console.Write("Deseja jogar novamente? 's' ou 'n'");
+    Console.Write("Deseja jogar novamente? 's' ou 'n': ");
     jogarNovamente = Console.ReadLine()?.ToUpper();
-
+    if (jogarNovamente == "S")
+    {
+        
+    }
 } while (jogarNovamente == "S");
 
 Console.WriteLine("Obrigado por jogar!!!");
@@ -56,7 +76,7 @@ void StartGame()
         
         while (!jogadorAcertou)
         {
-            textoBranco();
+            //textoBranco();
             Console.Write('\n' + "Digite uma letra: ");
 
             while (!char.TryParse(Console.ReadLine()?.ToUpper(), out letraDigitada))
@@ -109,6 +129,7 @@ void StartGame()
             Console.WriteLine('\n' + "Parabéns, você descobriu a palavra secreta!");
             fimDeJogo = true;
         }
+        textoBranco();
     }
 }
 
