@@ -33,7 +33,7 @@ Projeto desenvolvido durante a **Academia do Programador 2026** com o objetivo d
 
 ```bash
 git clone https://github.com/Vanderluizsj/AcademiaDoProgramadorBackEnd.git
-cd JogoDeAdivinhacao.ConsoleApp
+cd JogoDaForca.ConsoleApp
 dotnet run
 ```
 
