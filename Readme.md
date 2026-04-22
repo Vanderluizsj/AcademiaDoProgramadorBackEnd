@@ -17,8 +17,6 @@ Aplicação de console que realiza operações matemáticas básicas e mantém h
 
 **Funcionalidades:**
 
-**Funcionalidades:**
-
 | | |
 |---|---|
 | ➕ Soma | 📊 Tabuada |
