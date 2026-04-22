@@ -27,7 +27,7 @@ Aplicação de console que realiza operações matemáticas básicas e mantém h
 * Histórico de Operações
 
 ---
-### 🧮 Jogo da adivinhação Console
+### 🤔 Jogo da adivinhação Console
 
 Um jogo simples de console para adivinhar o numero que foi gerado automaticamente.
 
@@ -41,7 +41,7 @@ Um jogo simples de console para adivinhar o numero que foi gerado automaticament
 
 ---
 
-### 🧮 Jogo da forca Console
+### 🔤 Jogo da forca Console
 
 Um jogo simples de console para adivinhar as letras e completar a palavra.
 
@@ -55,7 +55,7 @@ Um jogo simples de console para adivinhar as letras e completar a palavra.
 * A cada erro uma parte do boneco aparece "enforcado", sendo a corda a primeira parte a aparecer na força após o primeiro erro
 
 ---
-### 🧮 Jogo Corrida de Dados Console
+### 🎲 Jogo Corrida de Dados Console
 
 Um jogo simples de console que ao pressionar Enter, um número entre 1 e 6 é escolhido de forma aleatória, simulando um jogo de dados.
 
