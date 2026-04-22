@@ -1,16 +1,78 @@
-﻿using CorridaDeDados.ConsoleApp;
+﻿namespace CorridaDeDados.ConsoleApp;
 
-string jogador;
-Funcoes funcoes = new Funcoes();
+using CorridaDeDados.ConsoleApp.Entidades;
 
-System.Console.Write("Digite seu nome para iniciar: ");
-//jogador = Console.ReadLine();
+class Program
+{
+    static void Main(string[] args)
+    {
+        string[] pista = new String[30];
+        int posicaoAtualJogador = 0;
+        int posicaoAtualComputador = 0;
+        int posicao = 0;
+        while (true)
+        {
+            Jogador.posicao = 0;
+            Computador.posicao = 0;
 
-System.Console.WriteLine();
+            for (int i = 1; i < 30; i++)
+            {
+                pista[i] = "-";
+            }
 
-//System.Console.WriteLine($"Bem vindo {jogador}!");
+            while (true)
+            {
+                // 1. Rodada do Jogador
+                posicao = Jogador.ExecutarRodada();
 
-jogador = funcoes.startGame();
+                if (Jogador.VenceuPartida())
+                    break;
+                else
+                {
+                    pista[posicaoAtualJogador] = "-";
+                    posicaoAtualJogador = posicao;
+                    pista[posicaoAtualJogador] = "J";
+                    for (int i = 1; i < 30; i++)
+                    {
+                        System.Console.Write(pista[i] + " ");
+                    }
+                    precioneEnter();
+                }
 
+                // 2. Rodada do Computador
+                posicao = Computador.ExecutarRodada();
 
-System.Console.WriteLine($"\nO vencedor foi {jogador}");
+                if (Computador.VenceuPartida())
+                    break;
+                else
+                {
+                    pista[posicaoAtualComputador] = "-";
+                    posicaoAtualComputador = posicao;
+                    pista[posicaoAtualComputador] = "R";
+                    for (int i = 1; i < 30; i++)
+                    {
+                        System.Console.Write(pista[i] + " ");
+                    }
+                    precioneEnter();
+                }
+            }
+
+            Console.WriteLine("--------------------------------------");
+            Console.Write("Deseja continuar? (s/N): ");
+            string? opcaoContinuar = Console.ReadLine()?.ToUpper();
+
+            if (opcaoContinuar != "S")
+                break;
+        }
+        void precioneEnter()
+        {
+            Console.WriteLine('\n' + "Precione Enter para continuar...");
+            ConsoleKeyInfo tecla;
+            do
+            {
+                tecla = Console.ReadKey(true);
+            }
+            while (tecla.Key != ConsoleKey.Enter);
+        }
+    }
+}
