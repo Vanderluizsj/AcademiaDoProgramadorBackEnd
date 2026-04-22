@@ -38,8 +38,35 @@ Um jogo simples de console para adivinhar o numero que foi gerado automaticament
 
 * Escolha o nivel de dificuldade
 * Tente acertar o numero que foi gerado automaticamente pela aplicação
+
 ---
-*(Novos projetos serão adicionados ao longo do curso)*
+
+### 🧮 Jogo da forca Console
+
+Um jogo simples de console para adivinhar as letras e completar a palavra.
+
+🔗 Acesse o projeto:
+➡️ <a href="https://github.com/Vanderluizsj/AcademiaDoProgramadorBackEnd/tree/main/JogoDaForca">JogoDaForca</a>
+
+**Funcionalidades:**
+
+* O sistema escolhe o nome de uma fruta, em uma lista pré determinada, de forma aleatória
+* O jogador deve digitar as letras, uma a uma, até que a palavra esteja completa
+* A cada erro uma parte do boneco aparece "enforcado", sendo a corda a primeira parte a aparecer na força após o primeiro erro
+
+---
+### 🧮 Jogo Corrida de Dados Console
+
+Um jogo simples de console que ao pressionar Enter, um número entre 1 e 6 é escolhido de forma aleatória, simulando um jogo de dados.
+
+🔗 Acesse o projeto:
+➡️ <a href="https://github.com/Vanderluizsj/AcademiaDoProgramadorBackEnd/tree/main/CorridaDeDados">CorridaDeDados</a>
+
+**Funcionalidades:**
+
+* Ao pressionar Enter, um número entre 1 e 6 é escolhido de forma aleatória, simulando um jogo de dados.
+* O computador e o jogador alternam jogadas em turnos.
+* Alguns eventos, como avanços ou retrocessos, foram configurados em determinados pontos.
 
 ---
 
@@ -59,6 +86,10 @@ Um jogo simples de console para adivinhar o numero que foi gerado automaticament
 * Trabalhar com organização de código
 * Versionamento com Git e GitHub
 * Construção de portfólio profissional
+
+---
+
+*(Novos projetos serão adicionados ao longo do curso)*
 
 ---
 
