@@ -17,14 +17,12 @@ Aplicação de console que realiza operações matemáticas básicas e mantém h
 
 **Funcionalidades:**
 
-* Soma
-* Subtração
-* Multiplicação
-* Divisão
-* Tabuada
-* Potência
-* Raiz Quadrada
-* Histórico de Operações
+| Coluna 1        | Coluna 2              |
+|-----------------|-----------------------|
+| Soma            | Tabuada               |
+| Subtração       | Potência              |
+| Multiplicação   | Raiz Quadrada         |
+| Divisão         | Histórico de Operações|
 
 ---
 ### 🤔 Jogo da adivinhação Console
