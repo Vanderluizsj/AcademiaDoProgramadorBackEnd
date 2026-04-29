@@ -11,6 +11,16 @@ namespace RoboTupiniquimConsoleApp.Entidades
         {
             Console.Clear();
 
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.WriteLine("    ╔════════════════════════════╗      ");
+            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.WriteLine("    ║             Robô           ║      ");
+            Console.ForegroundColor = ConsoleColor.Blue;
+            Console.WriteLine("    ║          Tupiniquim        ║      ");
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.WriteLine("    ╚════════════════════════════╝      ");
+            Console.ForegroundColor = ConsoleColor.White;
+            Console.WriteLine();
             // janela visível de -5 até +5
             for (int y = 5; y >= -5; y--)
             {
