@@ -15,26 +15,26 @@ namespace RoboTupiniquimConsoleApp.Entidades
             {
                 Console.Clear();
                 Console.ForegroundColor = ConsoleColor.Green;
-            Console.WriteLine("                    ╔════════════════════════════╗      ");
-            Console.ForegroundColor = ConsoleColor.Yellow;
-            Console.WriteLine("                    ║             Robô           ║      ");
-            Console.ForegroundColor = ConsoleColor.Blue;
-            Console.WriteLine("                    ║          Tupiniquim        ║      ");
-            Console.ForegroundColor = ConsoleColor.Green;
-            Console.WriteLine("                    ╚════════════════════════════╝      ");
-            Console.ForegroundColor = ConsoleColor.White;
-            Console.WriteLine();
+                Console.WriteLine("                    ╔════════════════════════════╗      ");
+                Console.ForegroundColor = ConsoleColor.Yellow;
+                Console.WriteLine("                    ║             Robô           ║      ");
+                Console.ForegroundColor = ConsoleColor.Blue;
+                Console.WriteLine("                    ║          Tupiniquim        ║      ");
+                Console.ForegroundColor = ConsoleColor.Green;
+                Console.WriteLine("                    ╚════════════════════════════╝      ");
+                Console.ForegroundColor = ConsoleColor.White;
+                Console.WriteLine();
 
                 Console.WriteLine("----------------------------------------------------------------------");
-                Console.WriteLine("A posição inicial, dada por 2 inteiros (X e Y) e uma letra (Orientação),"+
+                Console.WriteLine("A posição inicial, dada por 2 inteiros (X e Y) e uma letra (Orientação)," +
                 "\n separados por espaços.");
                 Console.WriteLine("----------------------------------------------------------------------");
                 Console.ForegroundColor = ConsoleColor.Blue;
-                Console.WriteLine("                              LEGENDA:                                ");               
+                Console.WriteLine("                              LEGENDA:                                ");
                 Console.WriteLine("             N = NORTE\tL = LESTE\tS = SUL\tO = OESTE                 ");
                 Console.ForegroundColor = ConsoleColor.White;
                 Console.WriteLine("----------------------------------------------------------------------");
-                
+
                 Console.WriteLine("\nDigite a posição inicial (ex: 1 2 N):");
                 entrada = Console.ReadLine()?.ToUpper();
                 if (entrada.Length < 5)
