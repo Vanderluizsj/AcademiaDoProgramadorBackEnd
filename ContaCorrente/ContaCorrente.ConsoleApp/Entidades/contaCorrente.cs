@@ -33,6 +33,10 @@ public class contaCorrente
     {
         this.Saldo += quantidade;
     }
+    public void ConsultaSaldo()
+    {
+        System.Console.WriteLine($"O saldo atual da conta é {Saldo}");
+    }
     public bool Transfere(contaCorrente destino, double valor)
     {
         bool retirou = this.Saca(valor);
