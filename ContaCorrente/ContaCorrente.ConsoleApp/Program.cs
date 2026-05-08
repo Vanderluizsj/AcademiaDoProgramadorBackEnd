@@ -24,6 +24,8 @@ class Program
 
         DadosDaConta(conta1);
         DadosDaConta(conta2);
+
+        conta1.ConsultaSaldo();
     }
     public static void DadosDaConta(contaCorrente conta)
     {
